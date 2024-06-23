@@ -3,3 +3,4 @@
 
 ## 24-06-23
 preview-read-file 真内控国产化开发平台接口preview任意文件读取漏洞
+E-Cology-KtreeUploadAction-upload 泛微E-Cology-KtreeUploadAction任意文件上传漏洞
